@@ -44,5 +44,44 @@ public class HouseAppliance extends BaseEntity implements Serializable {
 	private Status status;
 	@Column(name = "BOUGHT_DATE")
 	private OffsetDateTime boughtDate;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getSerialNumber() {
+		return serialNumber;
+	}
+	public void setSerialNumber(String serialNumber) {
+		this.serialNumber = serialNumber;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public Status getStatus() {
+		return status;
+	}
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+	public OffsetDateTime getBoughtDate() {
+		return boughtDate;
+	}
+	public void setBoughtDate(OffsetDateTime boughtDate) {
+		this.boughtDate = boughtDate;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 
 }
